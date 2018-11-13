@@ -3,6 +3,7 @@ Very old code that fixed up the Outlook timezone identifier for each mailbox on 
 
 Probably code to be ashamed of in 2018 but it was written to fixup a problem we had after migrating from Schedule+ to Exchange.
 Basically all recurring appointments had a wrong timezone which I reversed to be:
+
       // GUID of the TimeZone property of recurring appointments
       // as found using OutlookSpy
       PropGUID: TGUID = '{00062002-0000-0000-C000-000000000046}';
